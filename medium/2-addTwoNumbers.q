@@ -56,7 +56,7 @@
 
 
 / Solution Info ===============================================
-addTwoNumbers[2 4 3; 5 6 4]
+/ addTwoNumbers[2 4 3; 5 6 4]
 
 addTwoNumbers:{[l1;l2]
   n:max count each (l1;l2);
@@ -66,14 +66,16 @@ addTwoNumbers:{[l1;l2]
 
   s:x+y;
 
-  carry:0;
-  res:();
+  / state = (result list; carry)
+  state:{
+    res:x 0;
+    carry:x 1;
+    v:y+carry;
+    ((res,v mod 10); v div 10)
+  }/[(() ; 0); s];
 
-  {[i]
-    v:s[i]+carry;
-    res,:v mod 10;
-    carry::v div 10;
-  } each til n;
+  res:first state;
+  carry:last state;
 
   $[carry>0; res,carry; res]
  }
