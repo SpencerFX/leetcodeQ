@@ -4,7 +4,7 @@
 | 2. Add Two Numbers                                          | Med. | ✅      |
 | 3. Longest Substring Without Repeating Characters           | Med. | ✅      |
 | 4. Median of Two Sorted Arrays                              | Hard | ✅      |
-| 5. Longest Palindromic Substring                            | Med. | ⬜      |
+| 5. Longest Palindromic Substring                            | Med. | ✅      |
 | 6. Zigzag Conversion                                        | Med. | ⬜      |
 | 7. Reverse Integer                                          | Med. | ⬜      |
 | 8. String to Integer (atoi)                                 | Med. | ⬜      |
